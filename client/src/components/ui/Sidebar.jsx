@@ -24,13 +24,13 @@ function Sidebar() {
 
   return (
     <nav style={estiloBarra}>
-      <Link style={estiloEnlace} to="/agenda">Agenda</Link>
-      <Link style={estiloEnlace} to="/auspicios">Auspicios</Link>
-      <Link style={estiloEnlace} to="/financiero">Financiero</Link>
-      <Link style={estiloEnlace} to="/inventario">Inventario</Link>
-      <Link style={estiloEnlace} to="/personal">Personal</Link>
-      <Link style={estiloEnlace} to="/tablero">Tablero</Link>
-      <Link style={estiloEnlace} to="/usuarios">Usuarios</Link>
+      <Link style={estiloEnlace} to="/tablero">📋Tablero</Link>
+      <Link style={estiloEnlace} to="/agenda">📅Agenda</Link>
+      <Link style={estiloEnlace} to="/personal">💼Personal</Link>
+      <Link style={estiloEnlace} to="/inventario">📦Inventario</Link>
+      <Link style={estiloEnlace} to="/financiero">🏦Financiero</Link>
+      <Link style={estiloEnlace} to="/auspicios">📢Auspicios</Link>
+      <Link style={estiloEnlace} to="/usuarios">👥Usuarios</Link>
     </nav>
   );
 }
