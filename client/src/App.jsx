@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/ui/Layout'; 
 
 import Agenda from './pages/Agenda';
 import Auspicios from './pages/Auspicios';
@@ -13,17 +14,19 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/agenda" element={<Agenda />} />
-        <Route path="/auspicios" element={<Auspicios />} />
-        <Route path="/financiero" element={<Financiero />} />
-        <Route path="/inventario" element={<Inventario />} />
-        <Route path="/personal" element={<Personal />} />
-        <Route path="/tablero" element={<Tablero />} />
-        <Route path="/usuarios" element={<Usuarios />} />
-        
+        <Route path="/" element={<Layout />}>
+          <Route path="/agenda" element={<Agenda />} />
+          <Route path="/auspicios" element={<Auspicios />} />
+          <Route path="/financiero" element={<Financiero />} />
+          <Route path="/inventario" element={<Inventario />} />
+          <Route path="/personal" element={<Personal />} />
+          <Route path="/tablero" element={<Tablero />} />
+          <Route path="/usuarios" element={<Usuarios />} />
+        </Route> 
       </Routes>
     </BrowserRouter>
   );
 }
+
 
 export default App;
