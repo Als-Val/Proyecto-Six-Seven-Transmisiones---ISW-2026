@@ -1,6 +1,6 @@
 import React from 'react';
 
-import EnConstrucción from '../components/EnConstruccion';
+import EnConstrucción from '../components/ui/EnConstruccion';
 
 function Inventario() {
   return (
