@@ -1,9 +1,12 @@
 import React from 'react';
 
+import EnConstrucción from '../components/EnConstruccion';
+
 function Financiero() {
   return (
     <div>
       <h1>Financiero</h1>
+      <EnConstrucción nombreModulo="Financiero"/>
     </div>
   );
 }
