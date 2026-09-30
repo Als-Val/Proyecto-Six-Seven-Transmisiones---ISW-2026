@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/ui/Layout'; 
 
-import Agenda from './pages/Agenda';
-import Auspicios from './pages/Auspicios';
-import Financiero from './pages/Financiero';
-import Inventario from './pages/Inventario';
-import Personal from './pages/Personal';
+
 import Tablero from './pages/Tablero';
+import Agenda from './pages/Agenda';
+import Personal from './pages/Personal';
+import Inventario from './pages/Inventario';
+import Financiero from './pages/Financiero';
+import Auspicios from './pages/Auspicios';
 import Usuarios from './pages/Usuarios';
 
 
@@ -15,12 +16,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/agenda" element={<Agenda />} />
-          <Route path="/auspicios" element={<Auspicios />} />
-          <Route path="/financiero" element={<Financiero />} />
-          <Route path="/inventario" element={<Inventario />} />
-          <Route path="/personal" element={<Personal />} />
           <Route path="/tablero" element={<Tablero />} />
+          <Route path="/agenda" element={<Agenda />} />
+          <Route path="/personal" element={<Personal />} />
+         <Route path="/inventario" element={<Inventario />} />
+          <Route path="/financiero" element={<Financiero />} />
+         <Route path="/auspicios" element={<Auspicios />} />
           <Route path="/usuarios" element={<Usuarios />} />
         </Route> 
       </Routes>
