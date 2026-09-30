@@ -2,8 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import EnConstrucción from '../components/EnConstruccion';
-
 function Tablero() {
   const estiloCuadricula = {
     display: 'grid',
